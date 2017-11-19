@@ -1,0 +1,170 @@
+.panel .panel-heading {
+  font-size: 14px;
+}
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.panel-heading .pull-right .refresh {
+  text-decoration: none;
+  cursor: pointer;
+}
+.panel-heading .pull-right .refresh svg {
+  color: #6f716f;
+  height: 15px;
+  width: 15px;
+  fill: #3c3c3c;
+  vertical-align: middle;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.panel-heading .pull-right .refresh span {
+  vertical-align: middle;
+}
+.panel-heading .pull-right .refresh:hover svg {
+  fill: #59b757;
+  -webkit-transform: rotate(145deg);
+          transform: rotate(145deg);
+}
+.panel-body .loading {
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.panel-body .loading.show {
+  max-height: 200px;
+}
+.panel-body .loading svg {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  -webkit-animation: spinner 1s infinite;
+          animation: spinner 1s infinite;
+}
+.panel-body .loading span {
+  vertical-align: middle;
+  font-size: 26px;
+}
+.actions .panel-body .btn-group a span {
+  vertical-align: middle;
+}
+.msgs .alert {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.msgs .alert:first-child {
+  margin-top: 0;
+}
+.list-users .panel-body .table-container {
+  max-height: 1000px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+.list-users .panel-body .table-container.no {
+  max-height: 0;
+}
+.list-users .panel-body .table-container table tr .actions svg {
+  height: 20px;
+  width: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  fill: #676767;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.list-users .panel-body .table-container table tr .actions a {
+  margin-right: 2px;
+}
+.list-users .panel-body .table-container table tr .actions a.cross svg:hover {
+  fill: #cc4c4c;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.list-users .panel-body .table-container table tr .actions a.minus svg:hover {
+  fill: #dea63e;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.list-users .modal.kick .ban-only {
+  display: none;
+}
+.list-users .modal.kick .kick-only {
+  display: block;
+}
+.list-users .modal.ban .ban-only {
+  display: block;
+}
+.list-users .modal.ban .ban-only.temp-ban {
+  display: none;
+}
+.list-users .modal.ban .ban-only.temp-ban .btn-group .btn {
+  outline: none;
+}
+.list-users .modal.ban .ban-only.temp-ban .btn-group .btn.active {
+  background: #8bb3d2;
+  color: #fff;
+}
+.list-users .modal.ban .ban-only.temp-ban .input-group {
+  display: inline-table;
+  width: 50%;
+}
+.list-users .modal.ban .ban-only.temp-ban .input-group.group-until {
+  display: none;
+}
+.list-users .modal.ban .ban-only.temp-ban .input-group.group-until .text-field {
+  display: inline-block;
+  width: 80%;
+}
+.list-users .modal.ban .ban-only.temp-ban .input-group.group-until .calenderIcon {
+  width: 20%;
+  display: inline-table;
+}
+.list-users .modal.ban .kick-only {
+  display: none;
+}
+.list-users .modal .sl .third {
+  display: inline-block;
+  width: 31%;
+  margin: 0 .5%;
+}
+.list-users .modal .sl .third:first-child {
+  margin-left: 0;
+}
+.list-users .modal .sl .third:last-child {
+  margin-right: 0;
+}
+.list-channels .channel {
+  cursor: pointer;
+}
+.mass-message .panel-body {
+  font-size: 0;
+}
+.mass-message .panel-body input {
+  width: 85%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mass-message .panel-body a {
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,100 @@
+/* MESSAGES */
+.msgs .alert{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.msgs .alert:first-child{
+    margin-top: 0;
+}
+/* END MESSAGES */
+
+/* LIST USERS */
+.panel.actions .panel-body .btn-group a span{
+    vertical-align: middle;
+}
+.panel-body.list-users table tr .actions svg{
+    height: 20px;
+    width: 20px;
+}
+.panel-body.list-users table tr .actions a{ margin-right: 2px; }
+.panel-body.list-users table tr .actions .cross svg,
+.panel-body.list-users table tr .actions .minus svg{
+    transition: .3s;
+    fill: #676767;
+    transform: rotate(0deg);
+}
+.panel-body.list-users table tr .actions .cross svg:hover{
+    fill: #cc4c4c;
+    transform: rotate(90deg);
+}
+.panel-body.list-users table tr .actions .minus svg:hover{
+    fill: #dea63e;
+    transform: rotate(45deg);
+}
+.refresh{
+    text-decoration: none;
+    cursor: pointer;
+}
+.refresh svg{
+    color: #6f716f;
+    height: 15px;
+    width: 15px;
+    fill: #3c3c3c;
+    vertical-align: middle;
+    transition: .3s;
+}
+.refresh:hover svg{
+    fill: #59b757;
+    transform: rotate(145deg);
+}
+.refresh span{
+    vertical-align: middle;
+}
+.list-users-table{
+    max-height: 1000px;
+    transition: 1s;
+    overflow: hidden;
+}
+.list-users-table.no{
+    max-height: 0;
+}
+.list-users .loading{
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: 1.5s;
+}
+.list-users .loading.show{
+    max-height: 200px;
+}
+.list-users .loading svg{
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    animation: spinner 1s infinite;
+}
+.list-users .loading span{
+    vertical-align: middle;
+    font-size: 26px;
+}
+@keyframes spinner {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+/* END LIST USERS */
+
+/* MASS MESSAGE */
+.mass-message{
+    font-size: 0;
+}
+.mass-message input{
+    width: 85%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.mass-message a{
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* END MASS MESSAGE */

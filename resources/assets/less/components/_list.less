@@ -1,0 +1,49 @@
+.panel-heading{
+  .pull-right{
+    .refresh{
+      text-decoration: none;
+      cursor: pointer;
+
+      svg{
+        color: #6f716f;
+        height: 15px;
+        width: 15px;
+        fill: #3c3c3c;
+        vertical-align: middle;
+        transition: .3s;
+      }
+      span{
+        vertical-align: middle;
+      }
+      &:hover{
+        svg{
+          fill: #59b757;
+          transform: rotate(145deg);
+        }
+      }
+    }
+  }
+}
+.panel-body{
+  .loading{
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: 1.5s;
+
+    &.show{
+      max-height: 200px;
+    }
+
+    svg{
+      height: 40px;
+      width: 40px;
+      vertical-align: middle;
+      animation: spinner 1s infinite;
+    }
+    span{
+      vertical-align: middle;
+      font-size: 26px;
+    }
+  }
+}

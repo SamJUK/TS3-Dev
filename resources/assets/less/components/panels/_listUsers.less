@@ -1,0 +1,114 @@
+.list-users{
+  .panel-body{
+    .table-container {
+      max-height: 1000px;
+      transition: 1s;
+      overflow: hidden;
+
+      &.no {
+        max-height: 0;
+      }
+      table {
+        tr {
+          .actions {
+            svg {
+              height: 20px;
+              width: 20px;
+              transition: .3s;
+              fill: #676767;
+              transform: rotate(0deg);
+            }
+            a {
+              margin-right: 2px;
+
+              &.cross {
+                svg {
+                  &:hover {
+                    fill: #cc4c4c;
+                    transform: rotate(90deg);
+                  }
+                }
+              }
+              &.minus {
+                svg {
+                  &:hover {
+                    fill: #dea63e;
+                    transform: rotate(45deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal{
+    &.kick{
+      .ban-only{
+        display: none;
+      }
+      .kick-only{
+        display: block;
+      }
+    }
+    &.ban{
+      .ban-only{
+        display: block;
+
+        &.temp-ban{
+          display: none;
+
+          .btn-group{
+            .btn{
+              outline: none;
+              &.active{
+                background: #8bb3d2;
+                color: #fff;
+              }
+            }
+          }
+          .input-group{
+            display: inline-table;
+            width: 50%;
+            
+            &.group-until{
+              display: none;
+
+              .text-field{
+                display: inline-block;
+                width: 80%;
+              }
+              .calenderIcon{
+                width: 20%;
+                display: inline-table;
+              }
+            }
+          }
+        }
+      }
+      .kick-only{
+        display: none;
+      }
+    }
+
+    .sl{
+      .third{
+        display: inline-block;
+        width: 31%;
+        margin: 0 .5%;
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
